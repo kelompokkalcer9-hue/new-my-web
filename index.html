@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMKN 2 Cipatujah | Profil Sekolah</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+header {
+    background: #071d35;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #42d6c5;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #42d6c5;
+}
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    color: white;
+    background:
+    linear-gradient(90deg, #071d35 20%, #071d35dd 60%, #071d3588),
+    url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600')
+    center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #42d6c5;
+}
+
+.hero p {
+    line-height: 1.8;
+    color: #d8e3ed;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 28px;
+    background: #42d6c5;
+    color: #071d35;
+    padding: 13px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: white;
+}
+
+section {
+    padding: 75px 9%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #071d35;
+}
+
+.section-title p {
+    color: #718096;
+    margin-top: 10px;
+}
+
+.about {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.9;
+    color: #566276;
+}
+
+.jurusan {
+    background: #eaf0f7;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 32px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #071d3510;
+    transition: .3s;
+    border-bottom: 4px solid #42d6c5;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px #071d3520;
+}
+
+.card .icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    color: #071d35;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #68778b;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.alamat {
+    background: #071d35;
+    color: white;
+    text-align: center;
+}
+
+.alamat h2 {
+    color: #42d6c5;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.alamat p {
+    line-height: 1.9;
+    color: #d8e3ed;
+}
+
+footer {
+    background: #041426;
+    text-align: center;
+    padding: 25px;
+    color: #aab8c8;
+    font-size: 13px;
+}
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SMKN 2 CIPATUJAH</div>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#jurusan">Jurusan</a>
+        <a href="#alamat">Alamat</a>
+    </nav>
+</header>
+
+<!-- BERANDA -->
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>Selamat Datang di <span>SMKN 2 Cipatujah</span></h1>
+        <p>
+            Membangun generasi muda yang kompeten, kreatif,
+            inovatif, dan siap menghadapi tantangan masa depan
+            melalui pendidikan kejuruan berkualitas.
+        </p>
+        <a href="#profil" class="btn">Jelajahi Sekolah</a>
+    </div>
+</div>
+
+<!-- PROFIL -->
+<section id="profil">
+    <div class="section-title">
+        <h2>Profil Sekolah</h2>
+        <p>Mengenal lebih dekat SMKN 2 Cipatujah</p>
+    </div>
+
+    <div class="about">
+        <p>
+            <b>SMKN 2 Cipatujah</b> merupakan sekolah menengah
+            kejuruan yang berlokasi di Cikawungading, Cipatujah,
+            Kabupaten Tasikmalaya, Jawa Barat.
+            Sekolah ini memiliki tiga kompetensi keahlian,
+            yaitu Rekayasa Perangkat Lunak (RPL), Agribisnis
+            Pengolahan Hasil Perikanan (APHPI), dan
+            Nautika Kapal Penangkap Ikan (NKPI).
+        </p>
+        <br>
+        <p>
+            Dengan pendidikan berbasis keterampilan,
+            siswa diharapkan mampu mengembangkan potensi,
+            pengetahuan, dan kemampuan sesuai bidang
+            keahlian masing-masing.
+        </p>
+    </div>
+</section>
+
+<!-- JURUSAN -->
+<section class="jurusan" id="jurusan">
+    <div class="section-title">
+        <h2>Kompetensi Keahlian</h2>
+        <p>Tiga jurusan unggulan SMKN 2 Cipatujah</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>RPL</h3>
+            <p>
+                Rekayasa Perangkat Lunak mempelajari
+                pemrograman, pembuatan website,
+                aplikasi, database, dan teknologi
+                pengembangan perangkat lunak.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐟</div>
+            <h3>APHPI</h3>
+            <p>
+                Agribisnis Pengolahan Hasil Perikanan
+                mempelajari pengolahan, pengemasan,
+                pengawetan, dan pengembangan produk
+                hasil perikanan.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚢</div>
+            <h3>NKPI</h3>
+            <p>
+                Nautika Kapal Penangkap Ikan mempelajari
+                ilmu navigasi, keselamatan pelayaran,
+                teknik penangkapan ikan, dan
+                operasional kapal perikanan.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ALAMAT -->
+<section class="alamat" id="alamat">
+    <h2>Lokasi Sekolah</h2>
+    <p>
+        SMKN 2 Cipatujah<br>
+        Cikawungading, Cipatujah,<br>
+        Kabupaten Tasikmalaya, Jawa Barat.
+    </p>
+    <a class="btn"
+       href="https://www.google.com/maps/search/?api=1&query=SMKN+2+Cipatujah"
+       target="_blank">
+       Lihat Lokasi
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 SMKN 2 Cipatujah. All Rights Reserved.</p>
+    <p>Membangun Generasi Unggul dan Berkompeten.</p>
+</footer>
+
+</body>
+</html>
